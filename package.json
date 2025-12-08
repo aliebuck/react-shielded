@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jacobbuck/react-shielded.git"
+    "url": "git+https://github.com/aliebuck/react-shielded.git"
   },
   "keywords": [
     "react",
@@ -29,12 +29,12 @@
     "Womans Refuge",
     "New Zealand"
   ],
-  "author": "Jacob Buck <buck.jacob@gmail.com>",
+  "author": "Alie Buck <830470+aliebuck@users.noreply.github.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jacobbuck/react-shielded/issues"
+    "url": "https://github.com/aliebuck/react-shielded/issues"
   },
-  "homepage": "https://github.com/jacobbuck/react-shielded#readme",
+  "homepage": "https://github.com/aliebuck/react-shielded#readme",
   "dependencies": {
     "react-document-portal": "^1.2.1",
     "react-use-keypress": "^1.3.1"
