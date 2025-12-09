@@ -1,6 +1,6 @@
-import { useRef, useState } from 'react';
-import Logo from './Logo';
-import Modal from './Modal';
+import { useRef, useState } from "react";
+import Logo from "./Logo";
+import Modal from "./Modal";
 
 const Shielded = () => {
   const buttonRef = useRef(null);
@@ -14,15 +14,15 @@ const Shielded = () => {
         }}
         ref={buttonRef}
         style={{
-          display: 'inline-block',
+          display: "inline-block",
           margin: 0,
           padding: 0,
-          border: 'none',
-          WebkitAppearance: 'none',
-          MozAppearance: 'none',
-          appearance: 'none',
-          background: 'none',
-          cursor: 'pointer',
+          border: "none",
+          WebkitAppearance: "none",
+          MozAppearance: "none",
+          appearance: "none",
+          background: "none",
+          cursor: "pointer",
           opacity: isOpen ? 0 : 1,
         }}
         type="button"

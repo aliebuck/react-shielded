@@ -1,19 +1,19 @@
-import { fireEvent, renderHook } from '@testing-library/react';
-import { expect, test, vi } from 'vitest';
-import useMessage from '../useMessage';
+import { fireEvent, renderHook } from "@testing-library/react";
+import { expect, test, vi } from "vitest";
+import useMessage from "../useMessage";
 
-test('listens to window message event', () => {
+test("listens to window message event", () => {
   const listener = vi.fn();
   renderHook(() => useMessage(listener));
-  const event = new MessageEvent('message', { data: 'closeModal' });
+  const event = new MessageEvent("message", { data: "closeModal" });
   fireEvent(window, event);
   expect(listener).toHaveBeenCalledWith(event);
 });
 
-test('stops listening to window message event on unmount', () => {
+test("stops listening to window message event on unmount", () => {
   const listener = vi.fn();
   const { unmount } = renderHook(() => useMessage(listener));
   unmount();
-  fireEvent(window, new MessageEvent('message', { data: 'closeModal' }));
+  fireEvent(window, new MessageEvent("message", { data: "closeModal" }));
   expect(listener).not.toHaveBeenCalled();
 });

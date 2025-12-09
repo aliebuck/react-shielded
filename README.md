@@ -28,7 +28,7 @@ Install with your favourite package manager:
 Import in the `Shielded` component:
 
 ```js
-import Shielded from 'react-shielded';
+import Shielded from "react-shielded";
 ```
 
 Use in your React app:
