@@ -1,1 +1,1 @@
-export { default } from './Shielded';
+export { default } from './components/Shielded';

@@ -1,7 +1,7 @@
 import DocumentPortal from 'react-document-portal';
 import useKeypress from 'react-use-keypress';
-import useLockBodyScroll from './useLockBodyScroll';
-import useMessage from './useMessage';
+import useLockBodyScroll from '../hooks/useLockBodyScroll';
+import useMessage from '../hooks/useMessage';
 
 const Modal = ({ onRequestClose }) => {
   useLockBodyScroll();
