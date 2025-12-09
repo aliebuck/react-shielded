@@ -45,5 +45,3 @@ export const Modal = ({ onRequestClose }) => {
     </DocumentPortal>
   );
 };
-
-export default Modal;
