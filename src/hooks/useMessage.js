@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-const useMessage = (handler) => {
+export const useMessage = (handler) => {
   const handlerRef = useRef();
   useEffect(() => {
     handlerRef.current = handler;
@@ -11,5 +11,3 @@ const useMessage = (handler) => {
     return () => window.removeEventListener("message", listener);
   }, []);
 };
-
-export default useMessage;

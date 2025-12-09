@@ -1,6 +1,6 @@
 import { fireEvent, renderHook } from "@testing-library/react";
 import { expect, test, vi } from "vitest";
-import useMessage from "../useMessage";
+import { useMessage } from "../useMessage";
 
 test("listens to window message event", () => {
   const listener = vi.fn();

@@ -1,7 +1,7 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { expect, test, vi } from "vitest";
-import Modal from "../Modal";
+import { Modal } from "../Modal";
 
 test("matches snapshot", () => {
   render(<Modal onRequestClose={() => {}} />);

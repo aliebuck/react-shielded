@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const useLockBodyScroll = () => {
+export const useLockBodyScroll = () => {
   useEffect(() => {
     const originalOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
@@ -9,5 +9,3 @@ const useLockBodyScroll = () => {
     };
   }, []);
 };
-
-export default useLockBodyScroll;

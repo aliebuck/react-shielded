@@ -1,8 +1,8 @@
 import { useRef, useState } from "react";
-import Logo from "./Logo";
-import Modal from "./Modal";
+import { Logo } from "./Logo";
+import { Modal } from "./Modal";
 
-const Shielded = () => {
+export const Shielded = () => {
   const buttonRef = useRef(null);
   const [isOpen, setOpen] = useState(false);
   return (
@@ -36,5 +36,3 @@ const Shielded = () => {
     </>
   );
 };
-
-export default Shielded;
