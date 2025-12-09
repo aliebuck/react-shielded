@@ -12,7 +12,6 @@ export default defineConfig({
       external: [
         "react",
         "react/jsx-runtime",
-        "react-dom",
         "react-document-portal",
         "react-use-keypress",
       ],
