@@ -2,7 +2,9 @@ import { useEffect, useRef } from "react";
 
 const useMessage = (handler) => {
   const handlerRef = useRef();
-  handlerRef.current = handler;
+  useEffect(() => {
+    handlerRef.current = handler;
+  });
   useEffect(() => {
     const listener = (event) => handlerRef.current(event);
     window.addEventListener("message", listener);
