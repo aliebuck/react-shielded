@@ -6,11 +6,9 @@ const useMessage = (handler) => {
     handlerRef.current = handler;
   });
   useEffect(() => {
-    const listener = (event) => handlerRef.current(event);
+    const listener = (event) => handlerRef.current?.(event);
     window.addEventListener("message", listener);
-    return () => {
-      window.removeEventListener("message", listener);
-    };
+    return () => window.removeEventListener("message", listener);
   }, []);
 };
 

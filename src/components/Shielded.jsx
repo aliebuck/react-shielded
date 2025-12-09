@@ -9,17 +9,13 @@ const Shielded = () => {
     <>
       <button
         aria-label="Women’s Refuge"
-        onClick={() => {
-          setOpen(true);
-        }}
+        onClick={() => setOpen(true)}
         ref={buttonRef}
         style={{
           display: "inline-block",
           margin: 0,
           padding: 0,
           border: "none",
-          WebkitAppearance: "none",
-          MozAppearance: "none",
           appearance: "none",
           background: "none",
           cursor: "pointer",

@@ -7,9 +7,7 @@ const Modal = ({ onRequestClose }) => {
   useLockBodyScroll();
   useKeypress("Escape", onRequestClose);
   useMessage((event) => {
-    if ("closeModal" === event.data) {
-      onRequestClose();
-    }
+    if (event.data === "closeModal") onRequestClose();
   });
   return (
     <DocumentPortal>
@@ -34,9 +32,7 @@ const Modal = ({ onRequestClose }) => {
           aria-label="The Shielded Site"
           frameBorder="0"
           height="455"
-          onLoad={(event) => {
-            event.target?.focus();
-          }}
+          onLoad={(event) => event.target?.focus()}
           sandbox="allow-forms allow-scripts allow-same-origin allow-popups"
           src="https://staticcdn.co.nz"
           style={{
