@@ -1,5 +1,4 @@
 import { babel } from '@rollup/plugin-babel';
-import svgr from '@svgr/rollup';
 
 export default {
   input: 'src/index.js',
@@ -15,10 +14,8 @@ export default {
     'react-use-keypress',
   ],
   plugins: [
-    svgr({ babel: false, expandProps: false }),
     babel({
       babelHelpers: 'bundled',
-      extensions: ['.js', '.svg'],
     }),
   ],
 };

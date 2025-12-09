@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
+import Logo from './Logo';
 import Modal from './Modal';
-import Button from './button.svg';
 
 const Shielded = () => {
   const buttonRef = useRef(null);
@@ -27,7 +27,7 @@ const Shielded = () => {
         }}
         type="button"
       >
-        <Button />
+        <Logo />
       </button>
       {isOpen && (
         <Modal
