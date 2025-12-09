@@ -1,0 +1,23 @@
+import { resolve } from 'node:path';
+import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  build: {
+    lib: {
+      entry: resolve(__dirname, 'src/index.js'),
+      formats: ['es', 'cjs'],
+    },
+    rollupOptions: {
+      external: [
+        'react',
+        'react/jsx-runtime',
+        'react-dom',
+        'react-document-portal',
+        'react-use-keypress',
+      ],
+    },
+    sourcemap: true,
+  },
+  plugins: [react()],
+});
