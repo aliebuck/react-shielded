@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+### Changed
+
+- Updated [react-document-portal](https://www.npmjs.com/package/react-document-portal) dependency to v1.3.0.
+- Updated [react-use-keypress](https://www.npmjs.com/package/react-document-portal) dependency to v1.4.0.
+- Updated [react](https://www.npmjs.com/package/react) peer dependency to support v19+. (Fixes [#13](https://github.com/aliebuck/react-shielded/issues/13))
+
 ## v2.1.0 - 2023-03-29
 
 ### Changed
@@ -18,13 +26,13 @@
 
 - Updated [react-document-portal](https://www.npmjs.com/package/react-document-portal) dependency to v1.2.1.
 - Updated [react-use-keypress](https://www.npmjs.com/package/react-document-portal) dependency to v1.3.1.
-- Updated [react](https://www.npmjs.com/package/react) and [react-dom](https://www.npmjs.com/package/react-dom) peer-dependencies to support v18.
+- Updated [react](https://www.npmjs.com/package/react) and [react-dom](https://www.npmjs.com/package/react-dom) peer dependencies to support v18.
 
 ## v2.0.1 - 2021-12-15
 
 ### Added
 
-- Added [react-dom](https://www.npmjs.com/package/react-dom) peer-dependency.
+- Added [react-dom](https://www.npmjs.com/package/react-dom) peer dependency.
 
 ### Changed
 
@@ -65,7 +73,7 @@
 
 - Removed [@babel/runtime](https://www.npmjs.com/package/@babel/runtime) dependency for Babel helpers.
 - Removed error handler for iframe and always display iframe and close button.
-- Removed explicit [react-dom](https://www.npmjs.com/package/react-dom) peer-dependency.
+- Removed explicit [react-dom](https://www.npmjs.com/package/react-dom) peer dependency.
 
 ## v1.4.1 - 2020-09-04
 
