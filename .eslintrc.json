@@ -2,18 +2,17 @@
   "env": {
     "browser": true,
     "es6": true,
-    "jest": true,
     "node": true
   },
   "extends": [
     "eslint:recommended",
-    "plugin:jest/recommended",
     "plugin:jest-dom/recommended",
     "plugin:prettier/recommended",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
-    "plugin:testing-library/react"
+    "plugin:testing-library/react",
+    "plugin:@vitest/legacy-recommended"
   ],
   "parserOptions": {
     "ecmaFeatures": { "jsx": true },
@@ -21,12 +20,12 @@
     "sourceType": "module"
   },
   "plugins": [
-    "jest",
     "jest-dom",
     "prettier",
     "react",
     "react-hooks",
-    "testing-library"
+    "testing-library",
+    "@vitest"
   ],
   "rules": {
     "prettier/prettier": ["error", { "singleQuote": true }],

@@ -1,5 +1,6 @@
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import { expect, test } from 'vitest';
 import Shielded from '../Shielded';
 
 test('matches snapshot', () => {

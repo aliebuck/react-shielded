@@ -1,4 +1,5 @@
 import { renderHook } from '@testing-library/react';
+import { expect, test } from 'vitest';
 import useLockBodyScroll from '../useLockBodyScroll';
 
 test('sets "overflow: hidden" style on document body and unsets on unmout', () => {

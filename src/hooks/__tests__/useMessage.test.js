@@ -1,8 +1,9 @@
 import { fireEvent, renderHook } from '@testing-library/react';
+import { expect, test, vi } from 'vitest';
 import useMessage from '../useMessage';
 
 test('listens to window message event', () => {
-  const listener = jest.fn();
+  const listener = vi.fn();
   renderHook(() => useMessage(listener));
   const event = new MessageEvent('message', { data: 'closeModal' });
   fireEvent(window, event);
@@ -10,7 +11,7 @@ test('listens to window message event', () => {
 });
 
 test('stops listening to window message event on unmount', () => {
-  const listener = jest.fn();
+  const listener = vi.fn();
   const { unmount } = renderHook(() => useMessage(listener));
   unmount();
   fireEvent(window, new MessageEvent('message', { data: 'closeModal' }));
