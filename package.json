@@ -1,32 +1,7 @@
 {
   "name": "react-shielded",
   "version": "2.1.0",
-  "description": "Add the Women's Refuge Shielded Site button to your React website",
-  "type": "module",
-  "main": "./dist/react-shielded.cjs",
-  "module": "./dist/react-shielded.js",
-  "files": [
-    "dist"
-  ],
-  "exports": {
-    ".": {
-      "import": "./dist/react-shielded.js",
-      "require": "./dist/react-shielded.cjs"
-    }
-  },
-  "scripts": {
-    "build": "vite build",
-    "coverage": "vitest run --coverage",
-    "lint": "eslint .",
-    "format": "prettier --write .",
-    "prepare": "npm run build && husky",
-    "preversion": "npm run lint && npm run coverage",
-    "test": "vitest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aliebuck/react-shielded.git"
-  },
+  "description": "Add the Women's Refuge Shielded Site button to your React website.",
   "keywords": [
     "react",
     "component",
@@ -35,12 +10,37 @@
     "Womans Refuge",
     "New Zealand"
   ],
-  "author": "Alie Buck <830470+aliebuck@users.noreply.github.com>",
-  "license": "MIT",
+  "homepage": "https://github.com/aliebuck/react-shielded#readme",
   "bugs": {
     "url": "https://github.com/aliebuck/react-shielded/issues"
   },
-  "homepage": "https://github.com/aliebuck/react-shielded#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliebuck/react-shielded.git"
+  },
+  "license": "MIT",
+  "author": "Alie Buck <830470+aliebuck@users.noreply.github.com>",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/react-shielded.js",
+      "require": "./dist/react-shielded.cjs"
+    }
+  },
+  "main": "./dist/react-shielded.cjs",
+  "module": "./dist/react-shielded.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "coverage": "vitest run --coverage",
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "prepare": "npm run build && husky",
+    "test": "vitest",
+    "preversion": "npm run lint && npm run coverage"
+  },
   "dependencies": {
     "react-document-portal": "^1.3.0",
     "react-use-keypress": "^1.4.0"
